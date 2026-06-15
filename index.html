@@ -1,197 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhananjai Clinic | Healthcare Reimagined</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#fff;color:#1D1D1F;overflow-x:hidden}
-.progress{position:fixed;top:0;left:0;height:3px;background:#0071E3;width:0;z-index:9999}
-.nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);width:90%;max-width:1200px;
-backdrop-filter:blur(20px);background:rgba(255,255,255,.6);
-border:1px solid rgba(255,255,255,.5);padding:18px 30px;border-radius:50px;
-display:flex;justify-content:space-between;z-index:1000}
-.nav a{text-decoration:none;color:#1D1D1F;margin-left:20px}
-.section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:100px 10%}
-.hero{position:relative;text-align:center}
-.hero h1{font-size:clamp(4rem,10vw,8rem);letter-spacing:-4px;line-height:.9;font-weight:900}
-.hero p{max-width:700px;margin:30px auto;color:#6E6E73;font-size:1.3rem}
-.btns{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.btn{padding:16px 32px;border-radius:50px;background:#0071E3;color:#fff;text-decoration:none;transition:.3s}
-.btn:hover{transform:translateY(-4px) scale(1.03)}
-.btn.outline{background:transparent;border:1px solid #0071E3;color:#0071E3}
-.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.4}
-.o1{width:400px;height:400px;background:#0071E3;top:10%;left:10%}
-.o2{width:350px;height:350px;background:#88c4ff;bottom:10%;right:10%}
-.statement{font-size:clamp(3rem,7vw,6rem);font-weight:800;text-align:center;max-width:1000px}
-.feature{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}
-.card{margin-top:40px;background:rgba(255,255,255,.7);backdrop-filter:blur(20px);
-padding:60px;border-radius:40px;box-shadow:0 30px 80px rgba(0,0,0,.12);
-max-width:900px;transition:1s}
-.feature h2,.dark h2{font-size:clamp(3rem,7vw,6rem);letter-spacing:-3px}
-.feature p,.dark p{font-size:1.2rem;color:#6E6E73;max-width:700px;margin-top:20px}
-.dark{background:#000;color:#fff;text-align:center}
-.dark p{color:#d1d1d1}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;width:100%}
-.stat{text-align:center}
-.num{font-size:5rem;font-weight:900}
-.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(20px);
-padding:50px;border-radius:40px;box-shadow:0 30px 80px rgba(0,0,0,.12)}
-.map iframe{width:100%;height:500px;border:0;border-radius:30px}
-.footer{padding:60px;text-align:center;color:#6E6E73}
-.reveal{opacity:0;transform:translateY(60px);transition:1s}
-.reveal.active{opacity:1;transform:translateY(0)}
-.status{font-weight:700;margin-top:20px;font-size:1.3rem}
-.open{color:green}.closed{color:red}
-.loader{position:fixed;inset:0;background:#fff;display:flex;justify-content:center;align-items:center;font-size:3rem;font-weight:800;z-index:99999;transition:1s}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saran Swimming Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9ff;
+        }
+
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #023e8a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=1400&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            background: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        button {
+            background: #0096c7;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #0077b6;
+        }
+    </style>
 </head>
 <body>
-<div class="loader" id="loader">Dhananjai Clinic</div>
-<div class="progress" id="progress"></div>
 
-<nav class="nav">
-<div><b>Dhananjai Clinic</b></div>
-<div>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#timings">Timings</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+    <header>
+        <h1>Saran Swimming Academy</h1>
+        <p>Learn • Swim • Excel</p>
+    </header>
 
-<section class="section hero">
-<div class="orb o1"></div><div class="orb o2"></div>
-<div>
-<h1>Healthcare.<br>Reimagined.</h1>
-<p>Compassionate healthcare designed around people, not processes.</p>
-<div class="btns">
-<a class="btn" href="tel:+919842164627">Call Now</a>
-<a class="btn outline" href="https://wa.me/919842164627">WhatsApp Appointment</a>
-</div>
-</div>
-</section>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
 
-<section class="section reveal" id="about">
-<div class="statement">Trusted healthcare for Salem families.</div>
-</section>
+    <section class="hero">
+        <h1>Dive Into Success With Saran</h1>
+    </section>
 
-<section class="section feature reveal" id="services">
-<h2>Personalized Care.</h2>
-<p>Every patient receives focused attention and personalized medical guidance.</p>
-<div class="card">Designed around your health journey.</div>
-</section>
+    <section class="container">
+        <h2>Welcome to Saran Swimming Academy</h2>
+        <p>Professional swimming coaching for kids, beginners, and advanced swimmers.</p>
+        <button>Join Now</button>
+    </section>
 
-<section class="section feature reveal">
-<h2>Modern Healthcare.</h2>
-<p>Professional consultation with convenience, trust, and accessibility.</p>
-<div class="card">Simple. Efficient. Reliable.</div>
-</section>
+    <section class="container">
+        <h2>Our Programs</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Beginner Training</h3>
+                <p>Learn swimming basics with expert guidance.</p>
+            </div>
 
-<section class="section feature reveal">
-<h2>Family First.</h2>
-<p>Healthcare for every stage of life.</p>
-<div class="card">Care that grows with your family.</div>
-</section>
+            <div class="card">
+                <h3>Advanced Coaching</h3>
+                <p>Improve your speed, technique, and endurance.</p>
+            </div>
 
-<section class="section dark reveal">
-<div>
-<h2>Your Health.<br>Our Commitment.</h2>
-<p>Available six days a week with extended consultation hours.</p>
-</div>
-</section>
+            <div class="card">
+                <h3>Kids Swimming</h3>
+                <p>Fun and safe swimming lessons for children.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="section reveal">
-<div class="stats">
-<div class="stat"><div class="num" data-target="1000">0</div><h3>Patients Served</h3></div>
-<div class="stat"><div class="num" data-target="10">0</div><h3>Years of Care</h3></div>
-<div class="stat"><div class="num" data-target="7">0</div><h3>Days Availability</h3></div>
-</div>
-</section>
+    <footer>
+        <p>&copy; 2026 Saran Swimming Academy. All Rights Reserved.</p>
+    </footer>
 
-<section class="section reveal" id="timings">
-<div class="glass">
-<h2>Consultation Timings</h2>
-<br>
-<p>Monday - Saturday<br>10:00 AM – 9:30 PM</p><br>
-<p>Sunday<br>10:00 AM – 1:00 PM</p>
-<div id="status" class="status"></div>
-</div>
-</section>
-
-<section class="section reveal map">
-<div style="width:100%">
-<h2 style="font-size:clamp(3rem,6vw,5rem)">Located In The Heart Of Salem.</h2>
-<p style="margin:20px 0 40px;color:#6E6E73">4/44-E, Sathyanarayana Street, Near Peter England Showroom, Swarnapuri, Salem, Tamil Nadu 636004</p>
-<iframe src="https://maps.google.com/maps?q=salem%20tamil%20nadu&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-</div>
-</section>
-
-<section class="section reveal" id="contact">
-<div style="text-align:center">
-<h2 style="font-size:clamp(4rem,8vw,7rem)">Need Medical Assistance?</h2>
-<p style="font-size:1.5rem;color:#6E6E73;margin:20px 0 40px">Call us today.</p>
-<div class="btns">
-<a class="btn" href="tel:+919842164627">Call Clinic</a>
-<a class="btn outline" href="https://wa.me/919842164627">WhatsApp</a>
-<a class="btn" href="https://maps.google.com">Get Directions</a>
-</div>
-</div>
-</section>
-
-<footer class="footer">
-<h3>Dhananjai Clinic</h3><br>
-<p>Phone: +91 98421 64627</p>
-<p>Working Hours Available</p>
-<p>Salem, Tamil Nadu</p>
-</footer>
-
-<script>
-window.addEventListener('load',()=>{
-setTimeout(()=>document.getElementById('loader').style.opacity='0',1000);
-setTimeout(()=>document.getElementById('loader').style.display='none',2000);
-});
-
-window.addEventListener('scroll',()=>{
-let h=document.documentElement;
-let sc=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
-document.getElementById('progress').style.width=sc+'%';
-
-document.querySelectorAll('.reveal').forEach(el=>{
-if(el.getBoundingClientRect().top<window.innerHeight-100)el.classList.add('active');
-});
-});
-
-document.querySelectorAll('.num').forEach(num=>{
-let started=false;
-window.addEventListener('scroll',()=>{
-if(started) return;
-if(num.getBoundingClientRect().top<window.innerHeight){
-started=true;
-let target=+num.dataset.target,c=0;
-let i=setInterval(()=>{
-c+=Math.ceil(target/50);
-if(c>=target){c=target;clearInterval(i)}
-num.innerText=target>=1000?c+"+":c+"+";
-},30);
-}
-});
-});
-
-function clinicStatus(){
-let d=new Date(),day=d.getDay();
-let mins=d.getHours()*60+d.getMinutes();
-let open=false;
-if(day===0){open=mins>=600&&mins<=780;}
-else{open=mins>=600&&mins<=1290;}
-let el=document.getElementById('status');
-el.innerHTML=open?'OPEN NOW':'CLOSED NOW';
-el.className='status '+(open?'open':'closed');
-}
-clinicStatus();
-</script>
 </body>
 </html>
